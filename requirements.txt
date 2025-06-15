@@ -1,0 +1,22 @@
+# Email Spoofing Demonstration Tool Dependencies
+# For educational and security research purposes only
+
+# No external dependencies required - uses Python standard library only
+# The tool uses built-in modules:
+# - smtplib (for SMTP connection)
+# - ssl (for secure connections)
+# - email.mime.* (for email construction)
+# - argparse (for command line interface)
+# - getpass (for secure password input)
+# - typing (for type hints)
+
+# Optional dependencies for enhanced functionality:
+# colorama>=0.4.4  # For colored terminal output (optional)
+# cryptography>=3.4.8  # For additional security features (optional)
+
+# Minimum Python version: 3.6+
+# Recommended Python version: 3.8+
+
+python-dotenv==1.0.0
+secure-smtplib==0.1.1
+colorama==0.4.6 

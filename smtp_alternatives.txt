@@ -1,0 +1,68 @@
+# Alternative SMTP Servers for Better Email Spoofing
+# FOR EDUCATIONAL AND AUTHORIZED TESTING ONLY
+
+# ============================================================================
+# MORE PERMISSIVE SMTP SERVERS
+# ============================================================================
+
+# 1. MAILGUN (Good for spoofing demos)
+# - Sign up: mailgun.com
+# - SMTP: smtp.mailgun.org:587
+# - Username: postmaster@your-sandbox-domain
+# - Allows custom From headers
+# - Free tier: 5,000 emails/month
+
+# 2. SENDGRID (Allows sender identity spoofing)
+# - Sign up: sendgrid.com  
+# - SMTP: smtp.sendgrid.net:587
+# - Username: apikey
+# - Password: Your API key
+# - More flexible with From headers
+
+# 3. MAILTRAP (Perfect for testing)
+# - Sign up: mailtrap.io
+# - SMTP: smtp.mailtrap.io:587
+# - Captures emails without sending
+# - Great for spoof testing without delivery
+
+# 4. SMTP2GO (Business focused)
+# - Sign up: smtp2go.com
+# - SMTP: mail.smtp2go.com:587
+# - More business-friendly spoofing policies
+
+# 5. POSTAL (Self-hosted option)
+# - Open source mail server
+# - Full control over spoofing policies
+# - Requires technical setup
+
+# ============================================================================
+# LOCAL SMTP SERVERS (Advanced)
+# ============================================================================
+
+# 1. Python's built-in SMTP server (no authentication)
+# python -m smtpd -n -c DebuggingServer localhost:1025
+
+# 2. Postfix (Linux/Mac)
+# - Install: brew install postfix (Mac) or apt install postfix (Linux)
+# - Configure for local delivery
+# - No authentication required
+
+# ============================================================================
+# CORPORATE SMTP (Often more permissive)
+# ============================================================================
+
+# Many corporate SMTP servers are configured to allow
+# internal spoofing for legitimate business purposes:
+# - Internal relay servers
+# - Exchange servers with relaxed policies
+# - Legacy SMTP servers without modern security
+
+# ============================================================================
+# BYPASSING GMAIL'S RESTRICTIONS
+# ============================================================================
+
+# Advanced techniques (educational purposes):
+# 1. Use Gmail aliases (+tags)
+# 2. Multiple Gmail accounts
+# 3. Custom domain through Gmail
+# 4. G Suite/Google Workspace accounts 
